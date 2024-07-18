@@ -1,0 +1,11 @@
+/* src/components/Banner.css */
+.banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}

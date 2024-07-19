@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import "./Leaderboard.css";
+import LinesComp from "./lines";
 
 const Leaderboard: React.FC = () => {
   const scores = useSelector((state: RootState) => state.leaderboard.scores);
@@ -13,8 +14,12 @@ const Leaderboard: React.FC = () => {
 
   return (
     <div className="leaderboard">
-      <h1>Fastest of Today 🏆</h1>
-
+      <div className="heading">
+        <LinesComp bgColor="orange" alignI="flex-start" flexD="column"/>
+        <h1>Fastest of Today 🏆</h1>
+        <LinesComp bgColor="blue" alignI="flex-end" flexD="column-reverse"/>
+      </div>
+      
       <ul className="list-container">
         {sortedScores.map((score, index) => (
           <li

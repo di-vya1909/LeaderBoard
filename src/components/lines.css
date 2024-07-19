@@ -1,0 +1,21 @@
+.line {
+    height: 8px;
+    border-radius: 10px;
+}
+
+.lines-container {
+    display: flex;
+    gap: 10px;
+}
+
+.first {
+    width: 30rem;
+}
+
+.second {
+    width: 29rem;
+}
+
+.third {
+    width: 28rem;
+}
